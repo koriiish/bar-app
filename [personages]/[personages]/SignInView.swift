@@ -6,3 +6,15 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct SignInView: View {
+    
+    var body: some View {
+        Text("Sing in")
+    }
+}
+
+#Preview {
+    SignInView()
+}
