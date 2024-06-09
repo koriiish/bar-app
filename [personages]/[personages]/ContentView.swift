@@ -41,10 +41,10 @@ struct ContentView: View {
                                 Text("Profile")
                             }
                     }
+                    .accentColor(.accentColor)
                 }
                 
-                .navigationTitle("[Personages]")
-                
+               // .navigationTitle("[Personages]")
                 
                 
             }
