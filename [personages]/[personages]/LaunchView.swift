@@ -19,9 +19,9 @@ struct LaunchView: View {
             Text("[PERSONAGES]")
                 .font(.largeTitle)
                 .padding(.bottom, 70)
-                .foregroundStyle(.white)
+                .foregroundStyle(.testBeidge)
             Text("the art of bar & cinema")
-                .foregroundStyle(.white)
+                .foregroundStyle(.testBeidge)
         }
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {

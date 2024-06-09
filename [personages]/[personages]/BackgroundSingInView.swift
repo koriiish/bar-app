@@ -1,5 +1,5 @@
 //
-//  BackgroundView.swift
+//  BackgroundSingInView.swift
 //  [personages]
 //
 //  Created by Карина Дьячина on 9.06.24.
@@ -8,21 +8,24 @@
 import Foundation
 import SwiftUI
 
-struct BackgroundView: View {
+struct BackgroundSingInView: View {
     var body: some View {
         @Environment(\.colorScheme)
         var currentMode
         
         ZStack {
-            Color.secondMain.ignoresSafeArea()
-            LazyVGrid(columns: [GridItem(), GridItem(), GridItem(), GridItem(), GridItem(), GridItem(), GridItem()]) {
+            Color.testBeidge.ignoresSafeArea()
+                .opacity(0.6)
+            LazyVGrid(columns: [GridItem(), GridItem(), GridItem()]) {
                 ForEach(0..<100) { _ in
-                    Image(systemName: "popcorn")
+                    Image(systemName:  "popcorn")
                         .renderingMode(.template)
                         .resizable()
                         .scaledToFit()
-                        .foregroundStyle(.accent)
-                        .frame(width: 35, height: 35)
+                        .foregroundStyle(.accent
+                        )
+                        .opacity(0.7)
+                        .frame(width: 90, height: 90)
                     Spacer()
                 }
             }
@@ -31,5 +34,5 @@ struct BackgroundView: View {
 }
 
 #Preview {
-    BackgroundView()
+    BackgroundSingInView()
 }

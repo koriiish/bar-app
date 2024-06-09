@@ -14,10 +14,11 @@
 		A733961A2C15BF3600223DEC /* _personages_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73396192C15BF3600223DEC /* _personages_Tests.swift */; };
 		A73396242C15BF3600223DEC /* _personages_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73396232C15BF3600223DEC /* _personages_UITests.swift */; };
 		A73396262C15BF3600223DEC /* _personages_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73396252C15BF3600223DEC /* _personages_UITestsLaunchTests.swift */; };
-		A73396332C15F55100223DEC /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73396322C15F55100223DEC /* BackgroundView.swift */; };
+		A73396332C15F55100223DEC /* BackgroundSingInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73396322C15F55100223DEC /* BackgroundSingInView.swift */; };
 		A73396352C15F90900223DEC /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73396342C15F90900223DEC /* LaunchView.swift */; };
 		A73396382C15FDEA00223DEC /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73396372C15FDEA00223DEC /* SignInView.swift */; };
 		A733963A2C15FDF700223DEC /* SingUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73396392C15FDF700223DEC /* SingUpView.swift */; };
+		A733963C2C163DCF00223DEC /* BackgroundSingUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A733963B2C163DCF00223DEC /* BackgroundSingUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,10 +49,11 @@
 		A733961F2C15BF3600223DEC /* [personages]UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "[personages]UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A73396232C15BF3600223DEC /* _personages_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _personages_UITests.swift; sourceTree = "<group>"; };
 		A73396252C15BF3600223DEC /* _personages_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _personages_UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		A73396322C15F55100223DEC /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		A73396322C15F55100223DEC /* BackgroundSingInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundSingInView.swift; sourceTree = "<group>"; };
 		A73396342C15F90900223DEC /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		A73396372C15FDEA00223DEC /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		A73396392C15FDF700223DEC /* SingUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpView.swift; sourceTree = "<group>"; };
+		A733963B2C163DCF00223DEC /* BackgroundSingUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundSingUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +108,8 @@
 				A733960A2C15BF3500223DEC /* ContentView.swift */,
 				A73396372C15FDEA00223DEC /* SignInView.swift */,
 				A73396392C15FDF700223DEC /* SingUpView.swift */,
-				A73396322C15F55100223DEC /* BackgroundView.swift */,
+				A73396322C15F55100223DEC /* BackgroundSingInView.swift */,
+				A733963B2C163DCF00223DEC /* BackgroundSingUpView.swift */,
 				A73396342C15F90900223DEC /* LaunchView.swift */,
 				A733960C2C15BF3600223DEC /* Assets.xcassets */,
 				A733960E2C15BF3600223DEC /* Preview Content */,
@@ -269,10 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A73396332C15F55100223DEC /* BackgroundView.swift in Sources */,
+				A73396332C15F55100223DEC /* BackgroundSingInView.swift in Sources */,
 				A73396352C15F90900223DEC /* LaunchView.swift in Sources */,
 				A733963A2C15FDF700223DEC /* SingUpView.swift in Sources */,
 				A733960B2C15BF3500223DEC /* ContentView.swift in Sources */,
+				A733963C2C163DCF00223DEC /* BackgroundSingUpView.swift in Sources */,
 				A73396092C15BF3500223DEC /* _personages_App.swift in Sources */,
 				A73396382C15FDEA00223DEC /* SignInView.swift in Sources */,
 			);
