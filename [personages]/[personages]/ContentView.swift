@@ -10,47 +10,43 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-//            NavigationView {
-//                VStack {
-                    TabView {
-                        Text("")
-                            .font(.system(size: 30, weight: .bold, design: .rounded))
-                            .tabItem {
-                                Image(systemName: "book.pages")
-                                Text("Blog")
-                            }
-                     
-                        Text("")
-                            .font(.system(size: 30, weight: .bold, design: .rounded))
-                            .tabItem {
-                                Image(systemName: "calendar")
-                                Text("Events")
-                            }
-                     
-                        Text("")
-                            .font(.system(size: 30, weight: .bold, design: .rounded))
-                            .tabItem {
-                                Image(systemName: "bubble.left.and.text.bubble.right")
-                                Text("Contacts")
-                            }
-                     
-                        Text("")
-                            .font(.system(size: 30, weight: .bold, design: .rounded))
-                            .tabItem {
-                                Image(systemName: "person")
-                                Text("Profile")
-                            }
+            TabView {
+                Text("")
+                    .font(.system(size: 30, weight: .bold, design: .rounded))
+                    .tabItem {
+                        Image(systemName: "book.pages")
+                        Text("Blog")
                     }
-                    .accentColor(.accentColor)
-                }
+                    .tag(0)
                 
-               // .navigationTitle("[Personages]")
+                Text("")
+                    .font(.system(size: 30, weight: .bold, design: .rounded))
+                    .tabItem {
+                        Image(systemName: "calendar")
+                        Text("Events")
+                    }
+                    .tag(1)
                 
+                Text("")
+                    .font(.system(size: 30, weight: .bold, design: .rounded))
+                    .tabItem {
+                        Image(systemName: "bubble.left.and.text.bubble.right")
+                        Text("Contacts")
+                    }
+                    .tag(2)
                 
+                Text("")
+                    .font(.system(size: 30, weight: .bold, design: .rounded))
+                    .tabItem {
+                        Image(systemName: "person")
+                        Text("Profile")
+                    }
+                    .tag(3)
             }
+            .accentColor(.accentColor)
         }
-//    }
-//}
+    }
+}
 
 #Preview {
     ContentView()
