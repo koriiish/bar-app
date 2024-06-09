@@ -11,13 +11,21 @@ struct ContentView: View {
     var body: some View {
         VStack {
             TabView {
-                Text("")
-                    .font(.system(size: 30, weight: .bold, design: .rounded))
-                    .tabItem {
-                        Image(systemName: "book.pages")
-                        Text("Blog")
-                    }
-                    .tag(0)
+                NavigationStack {
+                    Text("[PERSONAGES]")
+                        .font(.title)
+                        .bold()
+                        .foregroundColor(.accentColor)
+                        .padding(.leading, -120.0)
+                        .padding()
+                    Spacer()
+
+                }
+                .tabItem {
+                    Image(systemName: "popcorn")
+                    Text("Blog")
+                }
+                .tag(0)
                 
                 Text("")
                     .font(.system(size: 30, weight: .bold, design: .rounded))
