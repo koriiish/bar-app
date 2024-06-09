@@ -10,14 +10,47 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+//            NavigationView {
+//                VStack {
+                    TabView {
+                        Text("")
+                            .font(.system(size: 30, weight: .bold, design: .rounded))
+                            .tabItem {
+                                Image(systemName: "book.pages")
+                                Text("Blog")
+                            }
+                     
+                        Text("")
+                            .font(.system(size: 30, weight: .bold, design: .rounded))
+                            .tabItem {
+                                Image(systemName: "calendar")
+                                Text("Events")
+                            }
+                     
+                        Text("")
+                            .font(.system(size: 30, weight: .bold, design: .rounded))
+                            .tabItem {
+                                Image(systemName: "bubble.left.and.text.bubble.right")
+                                Text("Contacts")
+                            }
+                     
+                        Text("")
+                            .font(.system(size: 30, weight: .bold, design: .rounded))
+                            .tabItem {
+                                Image(systemName: "person")
+                                Text("Profile")
+                            }
+                    }
+                }
+                
+                .navigationTitle("[Personages]")
+                
+                
+                
+            }
         }
-        .padding()
-    }
-}
+//    }
+//}
 
 #Preview {
     ContentView()
