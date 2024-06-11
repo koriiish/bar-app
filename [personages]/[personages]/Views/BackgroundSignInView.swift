@@ -1,5 +1,5 @@
 //
-//  BackgroundSingInView.swift
+//  BackgroundSignInView.swift
 //  [personages]
 //
 //  Created by Карина Дьячина on 9.06.24.
@@ -8,13 +8,13 @@
 import Foundation
 import SwiftUI
 
-struct BackgroundSingInView: View {
+struct BackgroundSignInView: View {
     var body: some View {
         @Environment(\.colorScheme)
         var currentMode
         
         ZStack {
-            Color.testBeidge.ignoresSafeArea()
+            Color.secondMain.ignoresSafeArea()
                 .opacity(0.6)
             LazyVGrid(columns: [GridItem(), GridItem(), GridItem()]) {
                 ForEach(0..<100) { _ in
@@ -34,5 +34,5 @@ struct BackgroundSingInView: View {
 }
 
 #Preview {
-    BackgroundSingInView()
+    BackgroundSignInView()
 }

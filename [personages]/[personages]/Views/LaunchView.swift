@@ -19,12 +19,12 @@ struct LaunchView: View {
             Text("[PERSONAGES]")
                 .font(.largeTitle)
                 .padding(.bottom, 70)
-                .foregroundStyle(.testBeidge)
+                .foregroundStyle(.secondMain)
             Text("the art of bar & cinema")
-                .foregroundStyle(.testBeidge)
+                .foregroundStyle(.secondMain)
         }
         .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
                 withAnimation {
                     self.isActive = true
                 }

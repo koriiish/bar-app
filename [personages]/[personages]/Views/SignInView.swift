@@ -11,10 +11,11 @@ import SwiftUI
 struct SignInView: View {
     @State private var email = ""
     @State private var password = ""
+    @State private var showSignUpView = false
     
     var body: some View {
         ZStack(alignment: .center) {
-            BackgroundSingInView()
+            BackgroundSignInView()
             VStack {
                 Text("Sign In")
                     .font(.largeTitle)
@@ -44,18 +45,26 @@ struct SignInView: View {
                 .opacity(0.9)
                 .clipShape(RoundedRectangle(cornerRadius: 8))
                 .padding(.top, 10)
-                Button("Sign in with Google") {
-                    //google sing in
-                }
-                .padding(.top, 10)
+//                Button("Sign in with Google") {
+//                    //google sing in
+//                }
+//                .padding(.top, 10)
                 Button("Click here if you forgot your password") {
                     //renewal password with email
                 }
                 .padding(.vertical, 10)
                 HStack {
                     Text("Don't have an account?")
-                    Button("Sing up") {
-                        //
+//                    Button(action: {
+//                        self.showSignUpView.toggle()
+//                    }) {
+//                        Text("Sign up")
+//                    }
+//                    .sheet(isPresented: $showSignUpView) {
+//                        SignUpView()
+//                    }
+                    NavigationLink(destination: SignUpView()) {
+                        Text ("Sign up")
                     }
                 }
             }

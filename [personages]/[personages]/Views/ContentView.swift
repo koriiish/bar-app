@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
         VStack {
             TabView {
@@ -16,7 +17,7 @@ struct ContentView: View {
                         .font(.title)
                         .bold()
                         .foregroundColor(.accentColor)
-                        .padding(.leading, -120.0)
+                        .padding(.leading, -130.0)
                         .padding()
                     Spacer()
 
@@ -27,24 +28,39 @@ struct ContentView: View {
                 }
                 .tag(0)
                 
-                Text("")
-                    .font(.system(size: 30, weight: .bold, design: .rounded))
+                NavigationStack {
+                    Text("[Announcements]")
+                        .font(.title)
+                        .bold()
+                        .foregroundColor(.accentColor)
+                        .padding(.leading, -120.0)
+                        .padding()
+                    Spacer()
+                }
                     .tabItem {
                         Image(systemName: "calendar")
                         Text("Events")
                     }
                     .tag(1)
                 
-                Text("")
-                    .font(.system(size: 30, weight: .bold, design: .rounded))
+                NavigationStack {
+                    Text("[How you can find us]")
+                        .font(.title)
+                        .bold()
+                        .foregroundColor(.accentColor)
+                        .padding(.leading, -80.0)
+                        .padding()
+                    Spacer()
+                }
                     .tabItem {
                         Image(systemName: "bubble.left.and.text.bubble.right")
                         Text("Contacts")
                     }
                     .tag(2)
                 
-                Text("")
-                    .font(.system(size: 30, weight: .bold, design: .rounded))
+                NavigationStack {
+                    SignInView()
+                }
                     .tabItem {
                         Image(systemName: "person")
                         Text("Profile")
