@@ -13,14 +13,8 @@ struct ContentView: View {
         VStack {
             TabView {
                 NavigationStack {
-                    Text("[PERSONAGES]")
-                        .font(.title)
-                        .bold()
-                        .foregroundColor(.accentColor)
-                        .padding(.leading, -130.0)
-                        .padding()
-                    Spacer()
-
+                    BlogView(post: UserPostData.posts()[1])
+                        .navigationTitle("[blog]")
                 }
                 .tabItem {
                     Image(systemName: "popcorn")
