@@ -40,6 +40,8 @@
 		A7C033D82C1DAC6600439900 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C033D72C1DAC6600439900 /* User.swift */; };
 		A7C033DA2C1DAC9C00439900 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C033D92C1DAC9C00439900 /* AvatarView.swift */; };
 		A7C033DC2C1DAFF400439900 /* UserPostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C033DB2C1DAFF400439900 /* UserPostData.swift */; };
+		A7C033DE2C1DB8D800439900 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C033DD2C1DB8D800439900 /* BackgroundView.swift */; };
+		A7C033E02C1DBB2000439900 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C033DF2C1DBB2000439900 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		A7C033D72C1DAC6600439900 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A7C033D92C1DAC9C00439900 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		A7C033DB2C1DAFF400439900 /* UserPostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostData.swift; sourceTree = "<group>"; };
+		A7C033DD2C1DB8D800439900 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		A7C033DF2C1DBB2000439900 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +222,7 @@
 				A73396322C15F55100223DEC /* BackgroundSignInView.swift */,
 				A73396502C18D61900223DEC /* UserData.swift */,
 				A73396392C15FDF700223DEC /* SingUpView.swift */,
+				A7C033DD2C1DB8D800439900 /* BackgroundView.swift */,
 			);
 			path = SignInUp;
 			sourceTree = "<group>";
@@ -242,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				A7C033C02C1D9CA300439900 /* ContactsView.swift */,
+				A7C033DF2C1DBB2000439900 /* MapView.swift */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -405,9 +411,11 @@
 				A7C033D02C1DA75300439900 /* JSONParse.swift in Sources */,
 				A733964F2C18D5C500223DEC /* FirebaseAuthManager.swift in Sources */,
 				A7C033D82C1DAC6600439900 /* User.swift in Sources */,
+				A7C033E02C1DBB2000439900 /* MapView.swift in Sources */,
 				A7C033C82C1DA2AC00439900 /* PostModel.swift in Sources */,
 				A7C033DC2C1DAFF400439900 /* UserPostData.swift in Sources */,
 				A7C033DA2C1DAC9C00439900 /* AvatarView.swift in Sources */,
+				A7C033DE2C1DB8D800439900 /* BackgroundView.swift in Sources */,
 				A733963A2C15FDF700223DEC /* SingUpView.swift in Sources */,
 				A733960B2C15BF3500223DEC /* ContentView.swift in Sources */,
 				A7C033CC2C1DA35F00439900 /* ImageView.swift in Sources */,
