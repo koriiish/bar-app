@@ -9,19 +9,23 @@ import Foundation
 import MapKit
 import SwiftUI
 
-struct MapView {
+struct MapView: View {
     
     let barLocation = CLLocationCoordinate2D(
-        latitude: 53.89945582220282,
-        longitude: 27.560260128774953)
+        latitude: 53.899323043511544,
+        longitude: 27.559927532212363)
     
+//    @State var camera: MapCameraPosition = .automatic
+//    
     var body: some View {
         Map() {
-            Marker("[Personages] Bar", coordinate: barLocation)
+            Marker("[Personages] Bar", systemImage: "figure.wave", coordinate: barLocation)
+                .tint(Color.accentColor)
         }
+        .mapStyle(.standard)
     }
 }
 
 #Preview {
-    MapView() as! any View
+    MapView()
 }

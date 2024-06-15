@@ -38,13 +38,7 @@ struct ContentView: View {
                     .tag(1)
                 
                 NavigationStack {
-                    Text("[How you can find us]")
-                        .font(.title)
-                        .bold()
-                        .foregroundColor(.accentColor)
-                        .padding(.leading, -80.0)
-                        .padding()
-                    Spacer()
+                    ContactsView()
                 }
                     .tabItem {
                         Image(systemName: "bubble.left.and.text.bubble.right")
