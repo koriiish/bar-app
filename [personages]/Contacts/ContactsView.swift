@@ -19,9 +19,13 @@ struct ContactsView: View {
                     .bold()
                     .foregroundStyle(Color.accentColor)
                     .padding(.leading, -140.0)
-                    .padding(.bottom)
-                Text("Adress: Karla Marksa st, 33")
-                    .bold()
+                    .padding(.vertical)
+                HStack{
+                    Text("Adress:")
+                        .bold()
+                    Text("Karla Marksa st, 33")
+                }
+                .padding(.leading, -135)
                 HStack {
                     Text("Our instagram:")
                         .bold()
@@ -33,11 +37,13 @@ struct ContactsView: View {
                     } label: {
                         Text("personages.bar")
                     }
-                    .padding()
+                    .padding(.vertical, 10)
                 }
+                .padding(.leading, -105.0)
                 HStack {
                     Text("For collaboration:")
                         .bold()
+                        .padding(.leading, -43)
                     Button {
                         let email = "gdehodil@gmail.com"
                         if let checkMail = URL(string: "mailto://\(email)") {
@@ -51,7 +57,7 @@ struct ContactsView: View {
                 VStack {
                     MapView()
                 }
-                .padding(EdgeInsets(top: 50, leading: 20, bottom: 60, trailing: 20))
+                .padding(EdgeInsets(top: 30, leading: 20, bottom: 40, trailing: 20))
                 .clipShape(RoundedRectangle(cornerSize: CGSize(width: 30, height: 30)))
             }
         }
