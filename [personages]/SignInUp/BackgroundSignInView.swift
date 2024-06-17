@@ -13,20 +13,21 @@ struct BackgroundSignInView: View {
         @Environment(\.colorScheme)
         var currentMode
         
-        ZStack {
-            Color.secondMain.ignoresSafeArea()
-                .opacity(0.6)
-            LazyVGrid(columns: [GridItem(), GridItem(), GridItem()]) {
-                ForEach(0..<100) { _ in
-                    Image(systemName:  "popcorn")
-                        .renderingMode(.template)
-                        .resizable()
-                        .scaledToFit()
-                        .foregroundStyle(.accent
-                        )
-                        .opacity(0.7)
-                        .frame(width: 90, height: 90)
-                    Spacer()
+            ZStack {
+                Color.secondMain.opacity(0.6)
+                ZStack {
+                LazyVGrid(columns: [GridItem(), GridItem(), GridItem()]) {
+                    ForEach(0..<11) { _ in
+                        Image(systemName:  "popcorn")
+                            .renderingMode(.template)
+                            .resizable()
+                            .scaledToFit()
+                            .foregroundStyle(.accent
+                            )
+                            .opacity(0.7)
+                            .frame(width: 90, height: 90)
+                        Spacer()
+                    }
                 }
             }
         }

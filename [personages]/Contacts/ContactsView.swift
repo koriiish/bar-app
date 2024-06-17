@@ -10,6 +10,9 @@ import SwiftUI
 
 struct ContactsView: View {
     
+    let barInstagram = "personages.bar"
+    let barEmail = "gdehodil@gmail.com"
+    
     var body: some View {
         ZStack {
             BackgroundView()
@@ -25,33 +28,17 @@ struct ContactsView: View {
                         .bold()
                     Text("Karla Marksa st, 33")
                 }
-                .padding(.leading, -135)
+                .padding(.leading, -138)
                 HStack {
-                    Text("Our instagram:")
+                    Text(.init("Our instagram: [@\(barInstagram)](https://instagram.com/personages.bar)"))
                         .bold()
-                    Button {
-                        let barInstagram = "personages.bar"
-                        if let checkInstagram = URL(string: "instagram://\(barInstagram)") {
-                            UIApplication.shared.canOpenURL(checkInstagram)
-                        }
-                    } label: {
-                        Text("personages.bar")
-                    }
                     .padding(.vertical, 10)
                 }
-                .padding(.leading, -105.0)
+                .padding(.leading, -92.0)
                 HStack {
-                    Text("For collaboration:")
+                    Text(.init("For collaboration: [\(barEmail)](mailto://gdehodil@gmail.com)"))
                         .bold()
                         .padding(.leading, -43)
-                    Button {
-                        let email = "gdehodil@gmail.com"
-                        if let checkMail = URL(string: "mailto://\(email)") {
-                            UIApplication.shared.open(checkMail)
-                        }
-                    } label: {
-                        Text("gdehodil@gmail.com")
-                    }
                 }
                 
                 VStack {
