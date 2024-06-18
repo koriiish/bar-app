@@ -54,7 +54,7 @@ struct BlogView: View {
                     .resizable()
                     .aspectRatio(3/2, contentMode: .fit)
             }
-            .padding(.top, 5)
+          //  .padding(.top, 5)
         }
     }
 }

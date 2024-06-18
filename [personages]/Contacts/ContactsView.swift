@@ -29,13 +29,13 @@ struct ContactsView: View {
                     Text("Karla Marksa st, 33")
                 }
                 .padding(.leading, -138)
-                HStack {
+                VStack {
                     Text(.init("Our instagram: [@\(barInstagram)](https://instagram.com/personages.bar)"))
                         .bold()
                     .padding(.vertical, 10)
                 }
                 .padding(.leading, -92.0)
-                HStack {
+                VStack {
                     Text(.init("For collaboration: [\(barEmail)](mailto://gdehodil@gmail.com)"))
                         .bold()
                         .padding(.leading, -43)
@@ -44,7 +44,7 @@ struct ContactsView: View {
                 VStack {
                     MapView()
                 }
-                .padding(EdgeInsets(top: 30, leading: 20, bottom: 40, trailing: 20))
+                .padding(EdgeInsets(top: 30, leading: 20, bottom: 80, trailing: 20))
                 .clipShape(RoundedRectangle(cornerSize: CGSize(width: 30, height: 30)))
             }
         }

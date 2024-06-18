@@ -14,8 +14,7 @@ struct BackgroundSignInView: View {
         var currentMode
         
             ZStack {
-                Color.secondMain.opacity(0.6)
-                ZStack {
+                BackgroundView()
                 LazyVGrid(columns: [GridItem(), GridItem(), GridItem()]) {
                     ForEach(0..<11) { _ in
                         Image(systemName:  "popcorn")
@@ -25,14 +24,13 @@ struct BackgroundSignInView: View {
                             .foregroundStyle(.accent
                             )
                             .opacity(0.7)
-                            .frame(width: 90, height: 90)
+                            .frame(width: 100, height: 100)
                         Spacer()
                     }
                 }
             }
         }
     }
-}
 
 #Preview {
     BackgroundSignInView()

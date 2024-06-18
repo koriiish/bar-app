@@ -15,8 +15,6 @@ struct MapView: View {
         latitude: 53.899323043511544,
         longitude: 27.559927532212363)
     
-//    @State var camera: MapCameraPosition = .automatic
-//    
     var body: some View {
         Map() {
             Marker("[Personages] Bar", systemImage: "figure.wave", coordinate: barLocation)
