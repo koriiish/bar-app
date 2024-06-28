@@ -71,7 +71,7 @@ Spacer()
             }
             .disabled(false)
             .padding(.leading, -161)
-            .padding(.top, 140)
+            .padding(.top, 145)
         }
     }
 }
