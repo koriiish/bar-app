@@ -24,7 +24,7 @@ struct EventsView: View {
                     Text("[Upcoming events]")
                         .font(.title)
                         .bold()
-                        .multilineTextAlignment(.leading)
+                        .padding(.leading, -100.0)
                         .foregroundStyle(.accent)
                     Table(events) {
                         TableColumn("") { event in
