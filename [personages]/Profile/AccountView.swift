@@ -12,7 +12,7 @@ struct AccountView: View {
     
     @State var quotes: [QuoteModel]
     @State var newQuote = QuoteView(quote: QuoteModel(text: "", author: ""))
-    /*QuoteModel(text: "", author: "")*/
+
     
     var body: some View {
         ZStack {
@@ -24,16 +24,15 @@ struct AccountView: View {
                     .foregroundStyle(.accent)
                     .padding(.vertical, 30)
 
-                Text("\(newQuote)")
+                newQuote
                     .padding(.horizontal, 20)
                 
                 Button {
-//                    newQuote = quotes.randomElement() ?? QuoteModel(text: "", author: "")
                     newQuote = QuoteView(quote: quotes.randomElement() ?? QuoteModel(text: "", author: ""))
                 } label: {
                     Text("Quote of the day")
                 }
-                .padding(.leading, -160)
+                .padding(.leading, -162)
                 .padding(.top, 30)
 Spacer()
             }
@@ -66,6 +65,9 @@ Spacer()
             
             Button {
                 firebase.logout()
+                NavigationLink(destination: SignInView()) {
+                    Text ("Sign in")
+                }
             } label: {
                 Text("Log out")
             }
