@@ -23,13 +23,7 @@ struct ContentView: View {
                 .tag(0)
                 
                 NavigationStack {
-                    Text("[Announcements]")
-                        .font(.title)
-                        .bold()
-                        .foregroundColor(.accentColor)
-                        .padding(.leading, -120.0)
-                        .padding()
-                    Spacer()
+                    EventsView()
                 }
                     .tabItem {
                         Image(systemName: "calendar")

@@ -18,14 +18,14 @@ struct EventsView: View {
     }
     
     var body: some View {
-        ZStack {
+        ZStack{
             BackgroundView()
-            VStack {
-                Text("[Upcoming events]")
-                    .font(.title)
-                    .bold()
-                    .multilineTextAlignment(.leading)
-                    .foregroundStyle(.accent)
+                VStack {
+                    Text("[Upcoming events]")
+                        .font(.title)
+                        .bold()
+                        .multilineTextAlignment(.leading)
+                        .foregroundStyle(.accent)
                     Table(events) {
                         TableColumn("") { event in
                             VStack {
@@ -35,17 +35,17 @@ struct EventsView: View {
                                 if isCompact == false {
                                     Text(event.date)
                                         .multilineTextAlignment(.leading)
-                                        
+                                    
                                         .foregroundStyle(.secondary)
                                 }
                             }
                         }
                     }
-                  //  .foregroundStyle(.accent)
+                    //  .foregroundStyle(.accent)
                 }
             }
         }
-    }
+}
 #Preview {
     EventsView()
 }
