@@ -44,7 +44,7 @@ struct ContactsView: View {
                 VStack {
                     MapView()
                 }
-                .padding(EdgeInsets(top: 30, leading: 20, bottom: 80, trailing: 20))
+                .padding(EdgeInsets(top: 30, leading: 20, bottom: 40, trailing: 20))
                 .clipShape(RoundedRectangle(cornerSize: CGSize(width: 30, height: 30)))
             }
         }

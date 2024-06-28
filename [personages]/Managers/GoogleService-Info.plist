@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyD1-0Zg-7hVv9JYXI6pkrIMdbpvIw_woqU</string>
+	<string>AIzaSyC4VzDUGf2QUFg_Wn41dsikMYmlG19POHw</string>
 	<key>GCM_SENDER_ID</key>
-	<string>488899881662</string>
+	<string>61161837143</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>TMS.-personages-</string>
 	<key>PROJECT_ID</key>
-	<string>personages-app</string>
+	<string>personages-1509c</string>
 	<key>STORAGE_BUCKET</key>
-	<string>personages-app.appspot.com</string>
+	<string>personages-1509c.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:488899881662:ios:6359b103edd14d374dccef</string>
+	<string>1:61161837143:ios:512d11c991c4c88e2a8912</string>
 </dict>
 </plist>

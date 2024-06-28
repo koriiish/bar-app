@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A71959412C2729060012C6F7 /* QuoteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71959402C2729060012C6F7 /* QuoteList.swift */; };
+		A71959432C27298A0012C6F7 /* QuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71959422C27298A0012C6F7 /* QuoteModel.swift */; };
+		A71959452C2731700012C6F7 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71959442C2731700012C6F7 /* QuoteView.swift */; };
 		A73396092C15BF3500223DEC /* _personages_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73396082C15BF3500223DEC /* _personages_App.swift */; };
 		A733960B2C15BF3500223DEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A733960A2C15BF3500223DEC /* ContentView.swift */; };
 		A733960D2C15BF3600223DEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A733960C2C15BF3600223DEC /* Assets.xcassets */; };
@@ -19,7 +22,6 @@
 		A73396382C15FDEA00223DEC /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73396372C15FDEA00223DEC /* SignInView.swift */; };
 		A733963A2C15FDF700223DEC /* SingUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73396392C15FDF700223DEC /* SingUpView.swift */; };
 		A733963C2C163DCF00223DEC /* BackgroundSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A733963B2C163DCF00223DEC /* BackgroundSignUpView.swift */; };
-		A733963E2C1899AF00223DEC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A733963D2C1899AF00223DEC /* GoogleService-Info.plist */; };
 		A73396412C189BEA00223DEC /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A73396402C189BEA00223DEC /* FirebaseAnalytics */; };
 		A73396432C189BEA00223DEC /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = A73396422C189BEA00223DEC /* FirebaseAppCheck */; };
 		A73396452C189BEA00223DEC /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A73396442C189BEA00223DEC /* FirebaseAuth */; };
@@ -42,6 +44,8 @@
 		A7C033DC2C1DAFF400439900 /* UserPostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C033DB2C1DAFF400439900 /* UserPostData.swift */; };
 		A7C033DE2C1DB8D800439900 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C033DD2C1DB8D800439900 /* BackgroundView.swift */; };
 		A7C033E02C1DBB2000439900 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C033DF2C1DBB2000439900 /* MapView.swift */; };
+		A7C4A0202C25E6D70044E130 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7C4A01F2C25E6D70044E130 /* GoogleService-Info.plist */; };
+		A7C4A0222C25ECA50044E130 /* BlogPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C4A0212C25ECA50044E130 /* BlogPostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A71959402C2729060012C6F7 /* QuoteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteList.swift; sourceTree = "<group>"; };
+		A71959422C27298A0012C6F7 /* QuoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteModel.swift; sourceTree = "<group>"; };
+		A71959442C2731700012C6F7 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
 		A73396052C15BF3500223DEC /* [personages].app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "[personages].app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A73396082C15BF3500223DEC /* _personages_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _personages_App.swift; sourceTree = "<group>"; };
 		A733960A2C15BF3500223DEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,7 +84,6 @@
 		A73396372C15FDEA00223DEC /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		A73396392C15FDF700223DEC /* SingUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpView.swift; sourceTree = "<group>"; };
 		A733963B2C163DCF00223DEC /* BackgroundSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundSignUpView.swift; sourceTree = "<group>"; };
-		A733963D2C1899AF00223DEC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A733964E2C18D5C500223DEC /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
 		A73396502C18D61900223DEC /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		A7C033BC2C1D9C6600439900 /* BlogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogView.swift; sourceTree = "<group>"; };
@@ -93,6 +99,8 @@
 		A7C033DB2C1DAFF400439900 /* UserPostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostData.swift; sourceTree = "<group>"; };
 		A7C033DD2C1DB8D800439900 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		A7C033DF2C1DBB2000439900 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		A7C4A01F2C25E6D70044E130 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A7C4A0212C25ECA50044E130 /* BlogPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +167,6 @@
 				A73396082C15BF3500223DEC /* _personages_App.swift */,
 				A73396522C18EAA900223DEC /* Views */,
 				A733960C2C15BF3600223DEC /* Assets.xcassets */,
-				A733963D2C1899AF00223DEC /* GoogleService-Info.plist */,
 				A733960E2C15BF3600223DEC /* Preview Content */,
 			);
 			path = "[personages]";
@@ -210,6 +217,7 @@
 				A7C033CB2C1DA35F00439900 /* ImageView.swift */,
 				A7C033BC2C1D9C6600439900 /* BlogView.swift */,
 				A7C033C52C1DA27000439900 /* posts.json */,
+				A7C4A0212C25ECA50044E130 /* BlogPostView.swift */,
 			);
 			path = Posts;
 			sourceTree = "<group>";
@@ -231,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				A733964E2C18D5C500223DEC /* FirebaseAuthManager.swift */,
+				A7C4A01F2C25E6D70044E130 /* GoogleService-Info.plist */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -239,6 +248,9 @@
 			isa = PBXGroup;
 			children = (
 				A7C033C22C1D9CB200439900 /* AccountView.swift */,
+				A71959402C2729060012C6F7 /* QuoteList.swift */,
+				A71959442C2731700012C6F7 /* QuoteView.swift */,
+				A71959422C27298A0012C6F7 /* QuoteModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -378,7 +390,7 @@
 			files = (
 				A73396102C15BF3600223DEC /* Preview Assets.xcassets in Resources */,
 				A733960D2C15BF3600223DEC /* Assets.xcassets in Resources */,
-				A733963E2C1899AF00223DEC /* GoogleService-Info.plist in Resources */,
+				A7C4A0202C25E6D70044E130 /* GoogleService-Info.plist in Resources */,
 				A7C033C62C1DA27000439900 /* posts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,21 +417,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				A73396332C15F55100223DEC /* BackgroundSignInView.swift in Sources */,
+				A71959452C2731700012C6F7 /* QuoteView.swift in Sources */,
 				A73396352C15F90900223DEC /* LaunchView.swift in Sources */,
 				A7C033BD2C1D9C6600439900 /* BlogView.swift in Sources */,
 				A7C033C12C1D9CA300439900 /* ContactsView.swift in Sources */,
 				A7C033D02C1DA75300439900 /* JSONParse.swift in Sources */,
+				A71959412C2729060012C6F7 /* QuoteList.swift in Sources */,
 				A733964F2C18D5C500223DEC /* FirebaseAuthManager.swift in Sources */,
 				A7C033D82C1DAC6600439900 /* User.swift in Sources */,
 				A7C033E02C1DBB2000439900 /* MapView.swift in Sources */,
 				A7C033C82C1DA2AC00439900 /* PostModel.swift in Sources */,
 				A7C033DC2C1DAFF400439900 /* UserPostData.swift in Sources */,
+				A7C4A0222C25ECA50044E130 /* BlogPostView.swift in Sources */,
 				A7C033DA2C1DAC9C00439900 /* AvatarView.swift in Sources */,
 				A7C033DE2C1DB8D800439900 /* BackgroundView.swift in Sources */,
 				A733963A2C15FDF700223DEC /* SingUpView.swift in Sources */,
 				A733960B2C15BF3500223DEC /* ContentView.swift in Sources */,
 				A7C033CC2C1DA35F00439900 /* ImageView.swift in Sources */,
 				A73396512C18D61900223DEC /* UserData.swift in Sources */,
+				A71959432C27298A0012C6F7 /* QuoteModel.swift in Sources */,
 				A733963C2C163DCF00223DEC /* BackgroundSignUpView.swift in Sources */,
 				A73396092C15BF3500223DEC /* _personages_App.swift in Sources */,
 				A7C033BF2C1D9C6F00439900 /* EventsView.swift in Sources */,

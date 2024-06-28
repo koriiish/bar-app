@@ -13,8 +13,8 @@ struct ContentView: View {
         VStack {
             TabView {
                 NavigationStack {
-                    BlogView(post: UserPostData.posts()[1])
-                        .navigationTitle("[blog]")
+                    BlogView(posts: UserPostData.posts())
+//                        .navigationTitle("personages.[blog]")
                 }
                 .tabItem {
                     Image(systemName: "popcorn")

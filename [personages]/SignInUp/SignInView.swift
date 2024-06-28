@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 struct SignInView: View {
+   // @ObservedObject var firebase: FirebaseAuthManager
     @State private var email = ""
     @State private var password = ""
     @State private var showSignUpView = false
@@ -37,7 +38,8 @@ struct SignInView: View {
                     .frame(maxWidth: 300)
                     .foregroundColor(.black)
                 Button("Sign in") {
-                    //
+                    firebase.login()
+                    AccountView(quotes: QuoteList.quotes())
                 }
                 .foregroundStyle(Color.white)
                 .frame(width: 300, height: 35, alignment: .center)
@@ -47,7 +49,7 @@ struct SignInView: View {
                 .padding(.top, 10)
 
                 Button("Click here if you forgot your password") {
-                    //renewal password with email
+                    firebase.resetPassword()
                 }
                 .padding(.vertical, 10)
                 HStack {
