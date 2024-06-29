@@ -11,6 +11,7 @@ import SwiftUI
 struct EventsView: View {
     
     @State private var events = EventsList.getEvent()
+    @State private var isShowingEvent = true
     @Environment(\.verticalSizeClass) private var verticalSizeClass
     
     private var isCompact: Bool {
@@ -31,17 +32,31 @@ struct EventsView: View {
                             VStack {
                                 Text(event.movie)
                                     .multilineTextAlignment(.leading)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                                    .foregroundStyle(.accent)
+                                    .bold()
                                 
                                 if isCompact == false {
                                     Text(event.date)
                                         .multilineTextAlignment(.leading)
                                     
                                         .foregroundStyle(.secondary)
+                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                    
                                 }
                             }
+                            //ячейка по тапу
+                            .sheet(isPresented: $isShowingEvent, content: {
+                                EventsInfoView(event: EventsModel(id: 1, movie: "", date: "", description: ""))
+                            })
+                            .gesture(
+                                TapGesture()
+                                    .onEnded { _ in
+                                     
+                                                })
                         }
+                    
                     }
-                    //  .foregroundStyle(.accent)
                 }
             }
         }

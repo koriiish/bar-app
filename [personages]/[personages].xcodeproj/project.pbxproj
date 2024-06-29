@@ -12,6 +12,7 @@
 		A71959452C2731700012C6F7 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71959442C2731700012C6F7 /* QuoteView.swift */; };
 		A71959472C2F2FFE0012C6F7 /* EventsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71959462C2F2FFE0012C6F7 /* EventsModel.swift */; };
 		A71959492C2F30AE0012C6F7 /* EventsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71959482C2F30AE0012C6F7 /* EventsList.swift */; };
+		A72791D72C309C0B007DCA1F /* EventsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72791D62C309C0B007DCA1F /* EventsInfoView.swift */; };
 		A73396092C15BF3500223DEC /* _personages_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73396082C15BF3500223DEC /* _personages_App.swift */; };
 		A733960B2C15BF3500223DEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A733960A2C15BF3500223DEC /* ContentView.swift */; };
 		A733960D2C15BF3600223DEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A733960C2C15BF3600223DEC /* Assets.xcassets */; };
@@ -73,6 +74,7 @@
 		A71959442C2731700012C6F7 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
 		A71959462C2F2FFE0012C6F7 /* EventsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsModel.swift; sourceTree = "<group>"; };
 		A71959482C2F30AE0012C6F7 /* EventsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsList.swift; sourceTree = "<group>"; };
+		A72791D62C309C0B007DCA1F /* EventsInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsInfoView.swift; sourceTree = "<group>"; };
 		A73396052C15BF3500223DEC /* [personages].app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "[personages].app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A73396082C15BF3500223DEC /* _personages_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _personages_App.swift; sourceTree = "<group>"; };
 		A733960A2C15BF3500223DEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 			children = (
 				A7C033BE2C1D9C6F00439900 /* EventsView.swift */,
 				A71959482C2F30AE0012C6F7 /* EventsList.swift */,
+				A72791D62C309C0B007DCA1F /* EventsInfoView.swift */,
 				A71959462C2F2FFE0012C6F7 /* EventsModel.swift */,
 			);
 			path = Events;
@@ -434,6 +437,7 @@
 				A733964F2C18D5C500223DEC /* FirebaseAuthManager.swift in Sources */,
 				A7C033D82C1DAC6600439900 /* User.swift in Sources */,
 				A7C033E02C1DBB2000439900 /* MapView.swift in Sources */,
+				A72791D72C309C0B007DCA1F /* EventsInfoView.swift in Sources */,
 				A7C033C82C1DA2AC00439900 /* PostModel.swift in Sources */,
 				A7C033DC2C1DAFF400439900 /* UserPostData.swift in Sources */,
 				A7C4A0222C25ECA50044E130 /* BlogPostView.swift in Sources */,
