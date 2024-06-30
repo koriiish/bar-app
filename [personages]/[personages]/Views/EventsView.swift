@@ -11,7 +11,8 @@ import SwiftUI
 struct EventsView: View {
     
     @State private var events = EventsList.getEvent()
-    @State private var isShowingEvent = true
+    @State private var isShowingEvent = false
+ //   @State var eventDescription = EventsInfoView(event: events)
     @Environment(\.verticalSizeClass) private var verticalSizeClass
     
     private var isCompact: Bool {
@@ -29,6 +30,7 @@ struct EventsView: View {
                         .foregroundStyle(.accent)
                     Table(events) {
                         TableColumn("") { event in
+                            var eventDescription = EventsInfoView(event: event)
                             VStack {
                                 Text(event.movie)
                                     .multilineTextAlignment(.leading)
@@ -45,15 +47,14 @@ struct EventsView: View {
                                     
                                 }
                             }
-                            //ячейка по тапу
+
                             .sheet(isPresented: $isShowingEvent, content: {
-                                EventsInfoView(event: EventsModel(id: 1, movie: "", date: "", description: ""))
+                                eventDescription
                             })
-                            .gesture(
-                                TapGesture()
-                                    .onEnded { _ in
-                                     
-                                                })
+                            .onTapGesture {
+                                
+                                isShowingEvent = true
+                            }
                         }
                     
                     }

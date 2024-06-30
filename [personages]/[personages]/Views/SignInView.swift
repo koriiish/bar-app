@@ -43,6 +43,7 @@ struct SignInView: View {
                     .foregroundColor(.black)
                 Button("Sign in") {
                     firebase.login()
+                    print("signin")
                     AccountView(firebase: FirebaseAuthManager(), quotes: QuoteList.quotes())
                 }
                 .foregroundStyle(Color.white)

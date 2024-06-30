@@ -9,12 +9,12 @@ import Foundation
 import SwiftUI
 
 struct EventsModel: Identifiable {
-    let id: Int
+    let id: String
     let movie: String
     let date: String
     let description: String
     
-    init(id: Int, movie: String, date: String, description: String) {
+    init(id: String, movie: String, date: String, description: String) {
         self.id = id
         self.movie = movie
         self.date = date

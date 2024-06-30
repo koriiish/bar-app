@@ -145,6 +145,27 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		A72791E32C31C1D6007DCA1F /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				A71959442C2731700012C6F7 /* QuoteView.swift */,
+				A7C4A0212C25ECA50044E130 /* BlogPostView.swift */,
+				A7C033DF2C1DBB2000439900 /* MapView.swift */,
+				A72791D62C309C0B007DCA1F /* EventsInfoView.swift */,
+				A7C033D92C1DAC9C00439900 /* AvatarView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		A72791E62C31C20E007DCA1F /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				A733960A2C15BF3500223DEC /* ContentView.swift */,
+				A73396342C15F90900223DEC /* LaunchView.swift */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
 		A73395FC2C15BF3500223DEC = {
 			isa = PBXGroup;
 			children = (
@@ -208,19 +229,15 @@
 		A73396522C18EAA900223DEC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A72791E62C31C20E007DCA1F /* MainViews */,
 				A7C033D52C1DA93800439900 /* BackgroundViews */,
-				A7C4A0212C25ECA50044E130 /* BlogPostView.swift */,
-				A73396392C15FDF700223DEC /* SingUpView.swift */,
+				A72791E32C31C1D6007DCA1F /* Subviews */,
 				A73396372C15FDEA00223DEC /* SignInView.swift */,
+				A73396392C15FDF700223DEC /* SingUpView.swift */,
 				A7C033BC2C1D9C6600439900 /* BlogView.swift */,
-				A7C033D92C1DAC9C00439900 /* AvatarView.swift */,
-				A71959442C2731700012C6F7 /* QuoteView.swift */,
 				A7C033C22C1D9CB200439900 /* AccountView.swift */,
-				A7C033DF2C1DBB2000439900 /* MapView.swift */,
 				A7C033C02C1D9CA300439900 /* ContactsView.swift */,
-				A733960A2C15BF3500223DEC /* ContentView.swift */,
 				A7C033BE2C1D9C6F00439900 /* EventsView.swift */,
-				A73396342C15F90900223DEC /* LaunchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -262,7 +279,6 @@
 				A73396502C18D61900223DEC /* UserData.swift */,
 				A71959482C2F30AE0012C6F7 /* EventsList.swift */,
 				A71959402C2729060012C6F7 /* QuoteList.swift */,
-				A72791D62C309C0B007DCA1F /* EventsInfoView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
