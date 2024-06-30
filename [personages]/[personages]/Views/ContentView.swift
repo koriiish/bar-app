@@ -41,7 +41,7 @@ struct ContentView: View {
                     .tag(2)
                 
                 NavigationStack {
-                    SignInView()
+                    SignInView(firebase: FirebaseAuthManager())
                 }
                     .tabItem {
                         Image(systemName: "person")

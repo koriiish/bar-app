@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 import Firebase
+import Combine
 
 class FirebaseAuthManager: ObservableObject {
     
@@ -16,7 +17,18 @@ class FirebaseAuthManager: ObservableObject {
     @Published var password = ""
     @Published var alert = false
     @Published var alertMessage = ""
+
     
+    
+    init() {
+        Auth.auth().addStateDidChangeListener { auth, user in
+            if user != nil {
+                self.isSignedIn = true
+            } else {
+                self.isSignedIn = false
+            }
+        }
+    }
     
     private func showAlertMessage(message: String) {
         alertMessage = message
@@ -32,7 +44,7 @@ class FirebaseAuthManager: ObservableObject {
         
         Auth.auth().createUser(withEmail: user.email, password: user.password) { result, error in
             guard error == nil else {
-                print(error?.localizedDescription)
+                self.alertMessage = "Sign Up error: \(error?.localizedDescription ?? "Undefined error")"
                 return
             }
             result?.user.sendEmailVerification()
@@ -48,7 +60,9 @@ class FirebaseAuthManager: ObservableObject {
                     }
             }
         }
+        Analytics.logEvent("SignUp", parameters: nil)
     }
+    
     //MARK: - SingIn and valid
     func login() {
         if email.isEmpty || password.isEmpty {
@@ -64,6 +78,7 @@ class FirebaseAuthManager: ObservableObject {
                 self.isSignedIn = true
             }
         }
+        Analytics.logEvent("SingIn", parameters: nil)
     }
     
     //MARK: - LogOut
@@ -74,8 +89,9 @@ class FirebaseAuthManager: ObservableObject {
             email = ""
             password = ""
         } catch {
-            print("Error signing out: \(error)")
+            self.alertMessage = "SignOut Error: \(error.localizedDescription)"
         }
+        Analytics.logEvent("SignOut", parameters: nil)
     }
     
     func resetPassword() {
@@ -84,6 +100,4 @@ class FirebaseAuthManager: ObservableObject {
 }
 
 
-
-let firebase = FirebaseAuthManager()
     

@@ -23,9 +23,10 @@ struct _personages_App: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                ContentView()
-            }
+            ViewCoordinator()
+//            NavigationView {
+//                ContentView()
+//            }
         }
     }
 }

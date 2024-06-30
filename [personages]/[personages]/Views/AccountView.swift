@@ -10,6 +10,7 @@ import SwiftUI
 
 struct AccountView: View {
     
+    @ObservedObject var firebase: FirebaseAuthManager
     @State var quotes: [QuoteModel]
     @State var newQuote = QuoteView(quote: QuoteModel(text: "", author: ""))
 
@@ -65,7 +66,7 @@ Spacer()
             
             Button {
                 firebase.logout()
-                NavigationLink(destination: SignInView()) {
+                NavigationLink(destination: SignInView(firebase: FirebaseAuthManager())) {
                     Text ("Sign in")
                 }
             } label: {
@@ -79,5 +80,5 @@ Spacer()
 }
 
 #Preview {
-    AccountView(quotes: QuoteList.quotes())
+    AccountView(firebase: FirebaseAuthManager(), quotes: QuoteList.quotes())
 }

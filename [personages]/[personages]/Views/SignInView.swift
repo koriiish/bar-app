@@ -8,8 +8,10 @@
 import Foundation
 import SwiftUI
 
+
 struct SignInView: View {
-   // @ObservedObject var firebase: FirebaseAuthManager
+
+    @ObservedObject var firebase: FirebaseAuthManager
     @State private var email = ""
     @State private var password = ""
     @State private var showSignUpView = false
@@ -28,6 +30,7 @@ struct SignInView: View {
                         RoundedRectangle(cornerRadius: 8)
                             .stroke(.accent, lineWidth: 1.5), alignment: .center)
                     .textFieldStyle(.roundedBorder)
+                    .autocorrectionDisabled()
                     .frame(maxWidth: 300)
                     .padding(.bottom)
                 SecureField("password", text: $password)
@@ -35,11 +38,12 @@ struct SignInView: View {
                         RoundedRectangle(cornerRadius: 8)
                             .stroke(.accent, lineWidth: 1.5), alignment: .center)
                     .textFieldStyle(.roundedBorder)
+                    .autocorrectionDisabled()
                     .frame(maxWidth: 300)
                     .foregroundColor(.black)
                 Button("Sign in") {
                     firebase.login()
-                    AccountView(quotes: QuoteList.quotes())
+                    AccountView(firebase: FirebaseAuthManager(), quotes: QuoteList.quotes())
                 }
                 .foregroundStyle(Color.white)
                 .frame(width: 300, height: 35, alignment: .center)
@@ -54,7 +58,7 @@ struct SignInView: View {
                 .padding(.vertical, 10)
                 HStack {
                     Text("Don't have an account?")
-                    NavigationLink(destination: SignUpView()) {
+                    NavigationLink(destination: SignUpView(firebase: FirebaseAuthManager())) {
                         Text ("Sign up")
                     }
                 }
@@ -68,6 +72,6 @@ struct SignInView: View {
 }
 
 #Preview {
-    SignInView()
+    SignInView(firebase: FirebaseAuthManager())
 }
 

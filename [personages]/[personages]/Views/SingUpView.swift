@@ -10,6 +10,7 @@ import SwiftUI
 
 struct SignUpView: View {
     
+    @ObservedObject var firebase: FirebaseAuthManager
     @State private var userName = ""
     @State private var email = ""
     @State private var password = ""
@@ -31,6 +32,7 @@ struct SignUpView: View {
                         RoundedRectangle(cornerRadius: 8)
                             .stroke(.accent, lineWidth: 1.5), alignment: .center)
                     .textFieldStyle(.roundedBorder)
+                    .autocorrectionDisabled()
                     .frame(maxWidth: 300)
                     .padding(.bottom)
                 TextField("email", text: $email)
@@ -38,6 +40,7 @@ struct SignUpView: View {
                         RoundedRectangle(cornerRadius: 8)
                             .stroke(.accent, lineWidth: 1.5), alignment: .center)
                     .textFieldStyle(.roundedBorder)
+                    .autocorrectionDisabled()
                     .frame(maxWidth: 300)
                     .padding(.bottom)
                 SecureField("password", text: $password)
@@ -45,6 +48,7 @@ struct SignUpView: View {
                         RoundedRectangle(cornerRadius: 8)
                             .stroke(.accent, lineWidth: 1.5), alignment: .center)
                     .textFieldStyle(.roundedBorder)
+                    .autocorrectionDisabled()
                     .frame(maxWidth: 300)
                     .padding(.bottom)
                 SecureField("repeat password", text: $repeatPassword)
@@ -52,6 +56,7 @@ struct SignUpView: View {
                         RoundedRectangle(cornerRadius: 8)
                             .stroke(.accent, lineWidth: 1.5), alignment: .center)
                     .textFieldStyle(.roundedBorder)
+                    .autocorrectionDisabled()
                     .frame(maxWidth: 300)
                     .padding(.bottom)
                 Button("Sign up") {
@@ -65,7 +70,7 @@ struct SignUpView: View {
                 .padding(.vertical, 10)
                 HStack {
                     Text("Already have an account?")
-                    NavigationLink(destination: SignInView()) {
+                    NavigationLink(destination: SignInView(firebase: FirebaseAuthManager())) {
                         Text ("Sign in")
                     }
                 }
@@ -79,5 +84,5 @@ struct SignUpView: View {
     }
 }
 #Preview {
-    SignUpView()
+    SignUpView(firebase: FirebaseAuthManager())
 }
