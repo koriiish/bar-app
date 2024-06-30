@@ -18,15 +18,16 @@ struct ViewCoordinator: View {
         if isActive {
             NavigationView {
                 if viewModel.isSignedIn == true {
-                    ContentView()
+                    AccountView(firebase: FirebaseAuthManager(), quotes: QuoteList.quotes())
+                    
                 } else {
                     if isSignedIn {
-                        AccountView(firebase: FirebaseAuthManager(), quotes: QuoteList.quotes())
+                        ContentView()
                         
                     } else {
                         SignUpView(firebase: FirebaseAuthManager())
-                   }
-               }
+                    }
+                }
             }
         } else {
             LaunchView(isActive: $isActive)

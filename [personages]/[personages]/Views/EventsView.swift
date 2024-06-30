@@ -12,7 +12,7 @@ struct EventsView: View {
     
     @State private var events = EventsList.getEvent()
     @State private var isShowingEvent = false
- //   @State var eventDescription = EventsInfoView(event: events)
+    
     @Environment(\.verticalSizeClass) private var verticalSizeClass
     
     private var isCompact: Bool {
@@ -30,7 +30,7 @@ struct EventsView: View {
                         .foregroundStyle(.accent)
                     Table(events) {
                         TableColumn("") { event in
-                            var eventDescription = EventsInfoView(event: event)
+                            let eventDescription = EventsInfoView(event: event)
                             VStack {
                                 Text(event.movie)
                                     .multilineTextAlignment(.leading)
@@ -47,12 +47,10 @@ struct EventsView: View {
                                     
                                 }
                             }
-
                             .sheet(isPresented: $isShowingEvent, content: {
                                 eventDescription
                             })
                             .onTapGesture {
-                                
                                 isShowingEvent = true
                             }
                         }
