@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 struct EventsInfoView: View {
+    
     let event: EventsModel
     
     var body: some View {
@@ -27,5 +28,5 @@ struct EventsInfoView: View {
 }
 
 #Preview {
-    EventsInfoView(event: EventsList.getEvent()[0])
+    EventsInfoView(event: EventsList.getEvent()[1])
 }
