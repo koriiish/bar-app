@@ -7,6 +7,7 @@
 
 import Foundation
 
+//MARK: - Model/List with base users and posts
 struct UserPostData {
     
     static let userGdeHodil     =   User(name: "Gde Hodil", avatar: "avatar")

@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+//MARK: - News blog SetUp
 struct BlogView: View {
     let posts: [PostModel]
     

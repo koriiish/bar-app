@@ -10,6 +10,7 @@ import SwiftUI
 
 struct QuoteList {
     
+    //MARK: - List of quotes
     static func quotes() -> [QuoteModel] {
         
         

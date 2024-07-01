@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+//MARK: - Model for event
 struct EventsModel: Identifiable {
     let id: String
     let movie: String

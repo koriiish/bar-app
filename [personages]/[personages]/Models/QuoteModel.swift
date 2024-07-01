@@ -7,6 +7,7 @@
 
 import Foundation
 
+//MARK: - Model for quotes(account-feature)
 struct QuoteModel {
     let text: String
     let author: String

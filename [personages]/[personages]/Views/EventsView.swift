@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+//MARK: - Events SetUp
 struct EventsView: View {
     
     @State private var events = EventsList.getEvent()

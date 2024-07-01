@@ -265,9 +265,9 @@
 		A7C033D42C1DA91E00439900 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A7C033DB2C1DAFF400439900 /* UserPostData.swift */,
 				A71959462C2F2FFE0012C6F7 /* EventsModel.swift */,
 				A7C033C72C1DA2AC00439900 /* PostModel.swift */,
-				A7C033DB2C1DAFF400439900 /* UserPostData.swift */,
 				A71959422C27298A0012C6F7 /* QuoteModel.swift */,
 			);
 			path = Models;

@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+//MARK: - SplashView
 struct LaunchView: View {
     @Binding var isActive: Bool
     

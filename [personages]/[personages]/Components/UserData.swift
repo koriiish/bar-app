@@ -7,6 +7,7 @@
 
 import Foundation
 
+//MARK: - Model for inner user
 struct UserData {
     var userName: String
     var email: String

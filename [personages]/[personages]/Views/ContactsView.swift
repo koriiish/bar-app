@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+//MARK: - Contacts SetUp
 struct ContactsView: View {
     
     let barInstagram = "personages.bar"

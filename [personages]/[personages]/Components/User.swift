@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+//MARK: - Model for base user
 struct User: Identifiable {
     var id: String = UUID().uuidString
     let name: String

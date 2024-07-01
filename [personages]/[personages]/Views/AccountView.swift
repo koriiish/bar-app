@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+//MARK: - User account SetUp
 struct AccountView: View {
     
     @ObservedObject var firebase: FirebaseAuthManager

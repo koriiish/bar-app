@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+//MARK: - List of events
 struct EventsList {
     
     static func getEvent() -> [EventsModel] {

@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+//MARK: - Main Background SetUp
 struct BackgroundView: View {
     var body: some View {
         @Environment(\.colorScheme)

@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-
+//MARK: - SingIn SetUp
 struct SignInView: View {
     
     @ObservedObject var firebase: FirebaseAuthManager
@@ -25,7 +25,7 @@ struct SignInView: View {
                     .bold()
                     .foregroundStyle(Color.black)
                     .padding(.bottom)
-                TextField("e-mail", text: $email)
+                TextField("e-mail", text: $firebase.email)
                     .overlay(
                         RoundedRectangle(cornerRadius: 8)
                             .stroke(.accent, lineWidth: 1.5), alignment: .center)
@@ -33,7 +33,8 @@ struct SignInView: View {
                     .autocorrectionDisabled()
                     .frame(maxWidth: 300)
                     .padding(.bottom)
-                SecureField("password", text: $password)
+                
+                SecureField("password", text: $firebase.password)
                     .overlay(
                         RoundedRectangle(cornerRadius: 8)
                             .stroke(.accent, lineWidth: 1.5), alignment: .center)
@@ -57,9 +58,11 @@ struct SignInView: View {
                     }
                         
                         Button("Click here if you forgot your password") {
-                            firebase.resetPassword()
+                            
                         }
                         .padding(.vertical, 10)
+                        .disabled(true)
+                
                         HStack {
                             Text("Don't have an account?")
                             NavigationLink(destination: SignUpView(firebase: FirebaseAuthManager())) {

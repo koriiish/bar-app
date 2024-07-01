@@ -7,6 +7,7 @@
 
 import Foundation
 
+//MARK: - Model for post(blog)
 struct PostModel: Identifiable  {
     var id: String = UUID().uuidString
     let user: User!

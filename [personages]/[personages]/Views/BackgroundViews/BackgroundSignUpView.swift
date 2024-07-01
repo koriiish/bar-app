@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+//MARK: - SingUp Background SetUp
 struct BackgroundSignUpView: View {
     var body: some View {
         @Environment(\.colorScheme)
